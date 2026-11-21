@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FluxoTech | Vitrine da Bio</title>
+  <meta name="description" content="Ofertas de hardware, notebooks e periféricos verificadas por código pela FluxoTech.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="ambient-glow ambient-glow--left" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-glow--right" aria-hidden="true"></div>
+
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="brand-row">
+        <div class="brand-badge" aria-hidden="true">FT</div>
+        <span class="brand-name">FluxoTech</span>
+        <span class="editorial-tag">RADAR FLUXO</span>
+      </div>
+      <h1 class="site-title">Ofertas por <span class="hl-offer">código</span></h1>
+      <p class="site-subtitle">
+        Digite o código do carrossel (#001, #002) ou filtre pelo componente para abrir o link oficial na loja.
+      </p>
+    </header>
+
+    <section class="search-panel" aria-label="Busca e filtros de ofertas">
+      <label class="sr-only" for="search-input">Buscar oferta por código ou nome</label>
+      <div class="search-box">
+        <span class="search-prefix" aria-hidden="true">#</span>
+        <input
+          id="search-input"
+          class="search-input"
+          type="search"
+          placeholder="Buscar código (#001) ou produto"
+          autocomplete="off"
+        >
+        <button id="clear-search" class="clear-btn" type="button" hidden>Limpar</button>
+      </div>
+
+      <div id="category-filters" class="category-filters" role="group" aria-label="Filtrar por categoria"></div>
+      <p id="results-count" class="results-count" aria-live="polite"></p>
+    </section>
+
+    <main>
+      <section id="offers-grid" class="offers-grid" aria-label="Lista de ofertas"></section>
+
+      <div id="empty-state" class="empty-state" hidden>
+        <p id="empty-title" class="empty-title">Nenhuma oferta encontrada.</p>
+        <p id="empty-body" class="empty-body">Limpe a busca para visualizar todo o histórico publicado.</p>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p id="affiliate-disclosure" class="footer-disclosure">
+        Links oficiais de afiliado (Mercado Livre e Amazon). A FluxoTech pode receber comissão por compras qualificadas sem custo adicional para você.
+      </p>
+      <p id="price-notice" class="footer-notice">
+        Preço e estoque podem variar desde a data da publicação original.
+      </p>
+      <p class="footer-handle">@fluxotech</p>
+    </footer>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
